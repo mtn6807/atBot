@@ -1,0 +1,11 @@
+{
+  "name": "atbot",
+  "version": "1.0.0",
+  "description": "Telegram bot that lets you at a group of people",
+  "main": "atBot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
