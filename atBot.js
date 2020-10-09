@@ -21,7 +21,7 @@ try{
 }
 
 slimbot.on('message', message => {
-    if(message.text.includes('/createGroup')){
+    if(message.text.includes('/creategroup')){
         var homiesToAdd = []
         var tag = ""
 
@@ -37,8 +37,8 @@ slimbot.on('message', message => {
 
         const allshit = message.text.split(' ');
         allshit.forEach((shitter) => {
-            if(shitter.includes("@")&& !homiesToAdd.includes(shitter)){
-                tag = shitter;
+            if(!homiesToAdd.includes(shitter)){
+                tag = "@"+shitter;
             }
         });
         db[tag] = homiesToAdd;
